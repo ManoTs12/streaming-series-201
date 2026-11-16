@@ -12,6 +12,10 @@ public class Main {
         System.out.println(serie1.toString());
         System.out.println(serie2.toString());
 
+            if(!serie1.setNota(Input.db("Informe a nota:"))){
+                System.out.println("Nota invalida!");
+
+            }
     }
 
-    }
+}

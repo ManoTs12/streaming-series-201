@@ -23,4 +23,31 @@ public class Series {
                 '}';
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getPlataforma() {
+        return plataforma;
+    }
+
+    public void setPlataforma(String plataforma) {
+        this.plataforma = plataforma;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public boolean setNota(double nota) {
+        if (nota >= 0 && nota <= 10) {
+            this.nota = nota;
+           return true;
+        }
+        return false;
+    }
 }
